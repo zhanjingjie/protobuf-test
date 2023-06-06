@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package company.protobuf;
+
+message Options {
+  bool publish = 1;
+}

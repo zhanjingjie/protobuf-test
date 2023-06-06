@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package company.testservice.testservice.v1;
+
+option go_package = "testservice/testservicev1";
+
+message Echo {
+  string hello = 1;
+  bool echoing = 2;
+}

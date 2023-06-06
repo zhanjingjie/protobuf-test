@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package company.testservice.testservice.v1;
+
+import "company/testservice/testservice/v1/testservice.proto";
+import "company/protobuf/options.proto";
+
+option go_package = "testservice/testservicev1";
+
+service TestserviceAPI {
+  rpc GettingStarted(GettingStartedRequest) returns (GettingStartedResponse) {}
+}
+
+message GettingStartedRequest {
+  Echo echo = 1;
+}
+
+message GettingStartedResponse {
+  Echo echoed = 1;
+}
